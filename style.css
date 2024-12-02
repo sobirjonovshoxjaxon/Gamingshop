@@ -10,6 +10,42 @@ section.header{
     padding: 20px 0;
 }
 
+body {
+    margin: 0;
+}
+
+.header {
+    height: 150px;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    transition: all .1s ease-in-out;
+    position: relative;
+    z-index: 1111;
+    border-radius: 0 0 20px 20px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation:  slidedown .4s forwards;
+}
+
+@keyframes slidedown{
+
+    from{
+        top: 40px;
+    }to{
+        top: 0;
+        box-shadow: 0 0 10px black;
+    }
+}
+
 .navbar-nav .nav-item .nav-link{
 
     color: white;
@@ -239,6 +275,233 @@ section.homepage{
 }
 
 /* end homepage */
+
+/* start-trending */
+
+section.trending{
+
+    padding: 250px 0 130px 0;
+}
+
+.title p{
+
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ee626b;
+}
+
+.title .texts{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title .texts h3{
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.title .texts .btn{
+
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ee626b;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+section.trending .trending-cards{
+
+    margin-top: 50px;
+}
+
+section.trending .trending-cards .card{
+
+    height: 320px;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+section.trending .card .card-image{
+
+    height: 220px;
+    border-radius: 20px;
+    position: relative;
+}
+
+section.trending .card .card-image img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+section.trending .card .card-image .price{
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px 15px;
+    background-color: #007aff;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+section.trending .card .card-image .price p{
+
+    margin-bottom: 0;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+section.trending .card .card-image .price .young-price{
+
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+section.trending .card .card-content{
+
+    height: 100px;
+    padding: 5px 20px 0 20px;
+}
+
+section.trending .card .item{
+
+    background-color: rgb(234, 230, 230);
+    height: 100%;
+    border-radius: 20px;
+}
+
+section.trending .card .card-content p:nth-of-type(1){
+
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+}
+
+section.trending .card .card-content .assasin{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.trending .card .card-content .assasin p{
+
+    text-transform: capitalize;
+    color: black;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+section.trending .card .card-content .assasin .circle{
+
+    width: 50px;
+    height: 50px;
+    background-color: #ee626b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section.trending .card .card-content .assasin .circle i{
+
+    color: white;
+}
+
+section.trending .trending-cards .card:hover .assasin .circle{
+
+    background-color: #007aff;
+   
+}
+
+section.trending .card:hover .card-content .assasin p{
+
+    color: #007aff;
+}
+
+/* end section.trending */
+
+/* start section.topgames */
+
+section.topgames{
+
+    background-color: rgb(234, 230, 230);
+    padding: 80px 0;
+    border-radius: 150px;
+}
+
+section.topgames .games .game{
+
+    height: 300px;
+}
+
+section.topgames .games .game .item{
+
+    background-color: white;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+}
+
+section.topgames .games .game .image{
+
+    height: 200px;
+    
+}
+
+section.topgames .games .game .image img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+section.topgames .games .game .game-content{
+
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: -20px;
+}
+
+section.topgames .games .game .game-content h3{
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+section.topgames .games .game .game-content p{
+
+    margin: 0;
+    text-transform: capitalize;
+}
+
+section.topgames .games .game .game-content a{
+
+    background-color: #ee626b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 35px;
+}
+
 
 
 
