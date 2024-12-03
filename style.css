@@ -502,6 +502,120 @@ section.topgames .games .game .game-content a{
     border-radius: 35px;
 }
 
+img{
+
+    object-fit: cover;
+}
+
+/* end topgames */
+
+section.topcategories{
+
+    padding: 100px 0;
+    text-align: center;
+}
+
+section.topcategories .category-title{
+
+    margin-bottom: 40px;
+}
+
+section.topcategories .category-title p{
+
+    font: 800 16px sans-serif;
+    text-transform: uppercase;
+    color: #ee626b;
+    margin-bottom: 15px;
+}
+
+section.topcategories .category-title h3{
+
+    font: 800 35px sans-serif;
+}
+
+section.topcategories .categories .category{
+
+    height: 290px;
+    margin-bottom: 15px;
+    
+}
+
+section.topcategories .categories .category .item{
+
+    background-color: #007aff;
+    height: 290px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.topcategories .categories .category .image{
+
+    height: 230px;
+    border-radius: 30px;
+}
+
+section.topcategories .categories .category .image img{
+
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+section.topcategories .categories .category .item .text{
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.topcategories .categories .category .item .text p{
+
+    color: white;
+    text-transform: capitalize;
+    font: 600 20px sans-serif;
+    margin: 0;
+}
+
+/* end topcategories */
+
+section.shop{
+
+    padding: 80px 0;
+}
+
+section.shop .image{
+
+    border: 2px solid red;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+section.shop .image img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+section.shop .shop{
+
+    border: 2px solid green;
+    background-color: rgb(234, 230, 230);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+section.shop .shop p:nth-child(1){
+
+    color: #ee626b;
+}
+
+
+
+
 
 
 
@@ -545,6 +659,20 @@ section.topgames .games .game .game-content a{
         
         font: 500 15px sans-serif;
     }
+
+    section.topcategories .categories{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        
+    }
+
+    section.shop .image{
+
+        display: none;
+    }
+    
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px){
