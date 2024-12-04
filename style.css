@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* home */
+
 section.header{
 
     background-color: #007aff;
@@ -754,7 +756,7 @@ section.shop .newsletter form .input .btn button{
 
 
 
-
+/* ikkilangan */
 
 
 section.shop .block-1{
@@ -887,6 +889,8 @@ section.shop .block-2 form .input .btn button{
     text-transform: uppercase;
 }
 
+/* ikkilangan */
+
 /* end section.shop */
 
 
@@ -910,6 +914,196 @@ section.footer p a{
 
     text-decoration: none;
     color: white;
+}
+
+/* end section.footer */
+
+/* end home */
+
+/* start Our Shop */
+
+section.breadcrumb{
+
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background-color: #007aff;
+    color: white;
+    border-radius: 0 0 150px 150px;
+}
+
+section.breadcrumb h1{
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+section.breadcrumb nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+section.breadcrumb nav ol .shop-text{
+
+    font-size: 20px;
+}
+
+section.breadcrumb nav ol{
+
+    margin-bottom: 0;
+}
+
+section.breadcrumb nav ol .home-text a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* end section.breadcrumb */
+
+section.galleries{
+
+    padding: 80px 0;
+    text-align: center;
+}
+
+section.galleries .btns{
+
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: 0 auto;
+}
+
+section.galleries .btns label{
+
+    text-transform: uppercase;
+    padding: 10px 25px;
+    background-color: rgb(234, 230, 230);
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+section.galleries .btns label:hover{
+
+    color: #ee626b;
+}
+
+section.galleries .gallery{
+
+    height: 320px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+section.galleries .gallery .item{
+
+    background-color: rgb(234, 230, 230);
+    border-radius: 30px;
+    height: 320px;
+}
+
+section.galleries .gallery .image{
+
+    height: 220px;
+    border-radius: 30px;
+    position: relative;
+}
+
+section.galleries .gallery .image .price{
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #007aff;
+    padding:  5px 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+section.galleries .gallery .price p{
+
+    margin-bottom: 0;
+}
+
+section.galleries .gallery .price .old-price{
+
+    text-decoration: line-through;
+    font-size: 17px;
+}
+
+section.galleries .gallery .price .current-price{
+
+    font-weight: 700;
+    font-size: 19px;
+}
+
+section.galleries .gallery .image img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+section.galleries .gallery .action{
+
+    font-size: 17px;
+    color: grey;
+    text-align: left;
+    padding-left: 30px;
+    margin: 10px 0 0 0;
+}
+
+section.galleries .gallery .cread{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    transition: 0.5s;
+}
+
+section.galleries .gallery .cread p{
+
+    font: 700 19px sans-serif;
+    margin: 0;
+    transition: 0.5s;
+}
+
+section.galleries .gallery .cread .circle{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ee626b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.galleries .gallery .cread .circle i{
+
+    color: white;
+}
+
+section.galleries .gallery:hover .cread p{
+
+    color: #007aff;
+}
+
+section.galleries .gallery:hover .cread .circle{
+
+    background-color: #007aff;
 }
 
 
@@ -997,6 +1191,39 @@ section.footer p a{
 
         display: none;
     }
+
+    section.galleries .btns{
+
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        
+    }
+
+    section.galleries .btns label{
+
+        display: flex;
+        justify-content: center;
+    }
+
+    section.breadcrumb h1{
+
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    section.breadcrumb nav ol .shop-text{
+
+        font-size: 17px;
+    }
+
+    section.breadcrumb nav ol .home-text a{
+
+        font-size: 17px;
+    }
+  
     
 }
 
@@ -1019,6 +1246,21 @@ section.footer p a{
         font: 500 15px sans-serif;
     }
 
+    section.galleries .btns{
+
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    section.breadcrumb h1{
+
+        font-weight: 700;
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
@@ -1037,6 +1279,12 @@ section.footer p a{
     .left-content form .button button{
 
         font: 500 15px sans-serif;
+    }
+
+    section.galleries .btns{
+
+        width: 90%;
+        margin: 0 auto;
     }
     
 }
@@ -1062,7 +1310,12 @@ section.footer p a{
 
         font-size: 35px;
         width: 100%;
-        
+    }
+
+    section.galleries .btns{
+
+        width: 70%;
+        margin: 0 auto;
     }
 
 }
@@ -1083,7 +1336,12 @@ section.footer p a{
 
         font-size: 35px;
         width: 100%;
-        
+    }
+
+    section.galleries .btns{
+
+        width: 60%;
+        margin: 0 auto;
     }
 
 
