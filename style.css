@@ -594,7 +594,6 @@ section.shop .row{
 
 section.shop .image{
 
-    border: 2px solid red;
     margin: 0 auto;
     border-radius: 30px;
     padding: 0;
@@ -668,6 +667,7 @@ section.shop .newsletter{
     position: absolute;
     right: 0;
     bottom: -50px;
+    
 }
 
 section.shop .newsletter p:nth-child(1){
@@ -757,6 +757,178 @@ section.shop .newsletter form .input .btn button{
 
 
 
+section.shop .block-1{
+
+    background-color: rgb(234, 230, 230);
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.shop .block-1 p:nth-child(1){
+
+    color: #ee626b;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+section.shop .block-1 h3{
+
+    font-size: 39px;
+    font-weight: 700;
+    color: black;
+    width: 75%;
+    margin-top: 15px;
+}
+
+section.shop .block-1 h3 span{
+
+    color: #007aff;
+}
+
+section.shop p:nth-child(3){
+
+    font-weight: 700;
+    font-size: 19px;
+    margin: 45px 0;
+}
+
+section.shop .block-1 .btn{
+
+    padding: 14px 25px;
+    background-color: #ee626b;
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    width: 33%;
+}
+
+section.shop .block-2{
+
+    background-color: rgb(234, 230, 230);
+    border-radius: 30px;
+    padding: 50px;
+    
+}
+
+section.shop .block-2 p:nth-child(1){
+
+    color: #ee626b;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+section.shop .block-2 h3{
+
+    font-size: 39px;
+    font-weight: 700;
+    color: black;
+    margin-top: 15px;
+    width: 90%;
+    margin: 40px 0;
+}
+
+section.shop .block-2 h3 span{
+
+    color: #007aff;
+}
+
+section.shop .block-2 form{
+
+    display: flex;
+}
+
+section.shop .block-2 form .input{
+
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+section.shop .block-2 form .input input{
+
+    padding: 12px 25px;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+section.shop .block-2 form .input input::placeholder{
+
+    font-size: 17px;
+}
+
+section.shop .block-2 form .input .btn{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 30px;
+    padding: 12px 25px;
+    background-color: #ee626b;
+    
+}
+
+section.shop .block-2 form .input .btn button{
+
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* end section.shop */
+
+
+section.footer{
+
+    background-color: #007aff;
+    color: white;
+    padding: 40px 30px 60px 30px;
+    border-radius: 150px 150px 0 0;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+section.footer p{
+
+    font: 500 18px sans-serif;
+}
+
+section.footer p a{
+
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -814,7 +986,16 @@ section.shop .newsletter form .input .btn button{
 
         font-size: 35px;
         width: 100%;
-        
+    }
+
+    section.shop .shop{
+
+        display: none;
+    }
+
+    section.shop .newsletter{
+
+        display: none;
     }
     
 }
@@ -837,6 +1018,7 @@ section.shop .newsletter form .input .btn button{
         
         font: 500 15px sans-serif;
     }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
@@ -856,6 +1038,7 @@ section.shop .newsletter form .input .btn button{
 
         font: 500 15px sans-serif;
     }
+    
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px){
