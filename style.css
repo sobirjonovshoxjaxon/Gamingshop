@@ -1106,6 +1106,38 @@ section.galleries .gallery:hover .cread .circle{
     background-color: #007aff;
 }
 
+section.galleries .galleriyalar{
+
+    margin-top: 50px;
+}
+
+#r1:checked ~ .galleries .galleriyalar .gallery{
+
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 0.5s;
+}
+
+#r2:checked ~ .galleries .galleriyalar .adventure{
+
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 0.5s;
+}
+
+#r2:checked ~ .galleries .galleriyalar .strategy,
+#r2:checked ~ .galleries .galleriyalar .racing{
+
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+
 
 
 
