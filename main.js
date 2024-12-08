@@ -25,11 +25,7 @@ document.querySelectorAll('input[type="radio"]').forEach(input => {
     });
 });
 
-// Birinchi input tanlangan holatda bo'lishi uchun
-document.querySelector('input[type="radio"]:checked').dispatchEvent(new Event('change'));
-
 // end header scroll
-
 
 
 // start tab
@@ -37,7 +33,9 @@ document.querySelector('input[type="radio"]:checked').dispatchEvent(new Event('c
 let btn 
 let text 
 
+
 window.onload = function(){
+
 
     btn = document.querySelectorAll("#tab .btn")
     text = document.querySelectorAll("#tab .tab-text")
@@ -73,6 +71,7 @@ document.getElementById("tab").onclick=function(e){
         btn[i].classList.add("active")
         text[i].classList.add("show")
         text[i].classList.remove("hide")
+        
        }else{
 
         text[i].classList.remove("show")
@@ -81,3 +80,4 @@ document.getElementById("tab").onclick=function(e){
 }
 
 // end tab
+
