@@ -853,6 +853,11 @@ section.galleries .btns label:hover{
     color: #ee626b;
 }
 
+section.galleries input{
+
+    display: none;
+}
+
 section.galleries .btns .label.selected{
     background-color: #ee626b; /* Tanlangan rang */
     color: white; /* Tanlangan matn rangi */

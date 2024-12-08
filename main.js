@@ -27,7 +27,6 @@ document.querySelectorAll('input[type="radio"]').forEach(input => {
 
 // end header scroll
 
-
 // start tab
 
 let btn 
