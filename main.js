@@ -2,11 +2,15 @@
 window.onscroll = function() {
     var header = document.getElementById("header");
     var navbar = document.getElementById("navbar");
+    let upbtn = document.querySelector(".up")
+
 
     if (window.pageYOffset > 150) {
         navbar.classList.add("fixed");
+        upbtn.classList.add("upactive")
     } else {
         navbar.classList.remove("fixed");
+        upbtn.classList.remove("upactive")
     }
 };
 
@@ -79,4 +83,28 @@ document.getElementById("tab").onclick=function(e){
 }
 
 // end tab
+
+
+// start modal 
+
+let modal = document.getElementById("modal")
+let showModal = document.getElementById("showModal")
+let closeModal = document.getElementById("close")
+
+showModal.onclick = function(){
+
+    modal.style.display = "flex" 
+}
+
+close.onclick = function(){
+
+    modal.style.display = "none"
+}
+
+
+// burchakdagi to'rtburchak tugmaniki qotib turgan
+
+
+
+
 

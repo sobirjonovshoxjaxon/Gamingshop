@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html,body{
+
+    scroll-behavior: smooth;
+}
+
 /* home */
 
 section.header{
@@ -1344,6 +1349,149 @@ section.contact .contact-right form button{
     background-color: #ee626b;
     color: white;
 }
+
+/* A'zolik modal */
+
+#modal{
+
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1111;
+    display: none;
+}
+
+#modal .modal-content{
+
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modal-content form input{
+
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid black;
+    font: 500 18px sans-serif;
+    margin-bottom: 15px;
+}
+
+.modal-content form button{
+
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.modal-content form button:nth-of-type(1){
+
+    background-color: #007aff;
+    color: white;
+    border: 2px solid #007aff;
+    position: relative;
+    z-index: 1;
+}
+
+.modal-content form button:nth-of-type(1)::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0155af;
+    border: 2px solid #0155af;
+    border-radius: 10px;
+    z-index: -1;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+
+.modal-content form button:nth-of-type(1):hover::before{
+
+    transform: scaleX(1);
+}
+
+.modal-content form button:nth-of-type(2){
+
+    background-color: gray;
+    border: 2px solid gray;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.modal-content form button:nth-of-type(2)::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(111, 109, 109);
+    border: 2px solid rgb(111, 109, 109);
+    border-radius: 10px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.modal-content form button:nth-of-type(2):hover::after{
+
+    transform: scaleX(1);
+}
+
+/* <!-- burchakdagi tugma --> */
+
+.up{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #007aff;
+    color: white;
+    border: 3px solid #007aff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1111;
+    opacity: 0;
+}
+
+.upactive{
+
+    opacity: 1;
+}
+
+.up i{
+
+    font-size: 25px;
+}
+
+.up:hover{
+    background-color: white;
+    color: #007aff;
+}
+
 
 @media screen and (min-width: 250px) and (max-width: 576px){
     .navbar-nav{
