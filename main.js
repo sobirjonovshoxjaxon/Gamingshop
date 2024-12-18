@@ -1,3 +1,19 @@
+// start modal 
+
+let modal = document.getElementById("modal")
+let showModal = document.getElementById("showModal")
+let closeModal = document.querySelector("#close")
+
+showModal.onclick = function(){
+
+    modal.style.display = "flex" 
+}
+
+closeModal.onclick = function(){
+
+    modal.style.display = "none"
+}
+
 // start header scroll
 window.onscroll = function() {
     var header = document.getElementById("header");
@@ -31,85 +47,37 @@ document.querySelectorAll('input[type="radio"]').forEach(input => {
 
 // end header scroll
 
-// start tab
-
-let btn 
-let text 
-
-function texthidden(){
-
-    for(let i=0; i<btn.length; i++){
-
-        btn[i].classList.remove("active")
-        text[i].classList.add("hide")
-    }
-}
-
-
-window.onload = function(){
-
-
-    btn = document.querySelectorAll("#tab .btn")
-    text = document.querySelectorAll("#tab .tab-text")
-
-    texthidden()
-    text[0].classList.add("show")
-    text[0].classList.remove("hide")
-    btn[0].classList.add("active")
-}
 
 
 
-document.getElementById("tab").onclick =  function(event){
+// window.onclick = function(event){
 
-    let t = event.target 
-    console.log(t)
-
-    for(let i=0; i<btn.length; i++){
-
-       if(btn[i] == t){
-
-            texthidden()
-
-            btn[i].classList.add("active")
-            text[i].classList.add("show")
-            text[i].classList.remove("hide")
-        
-       }else{
-
-        text[i].classList.remove("show")
-       }
-    }
-}
-
-// end tab
-
-
-// start modal 
-
-let modal = document.getElementById("modal")
-let showModal = document.getElementById("showModal")
-let closeModal = document.querySelector("#close")
-
-showModal.onclick = function(){
-
-    modal.style.display = "flex" 
-}
-
-closeModal.onclick = function(){
-
-    modal.style.display = "none"
-}
-
-
-window.onclick = function(event){
-
-    let ti = event.target 
-    console.log(ti)
-}
+//     let ti = event.target 
+//     console.log(ti)
+// }
 
 
 // burchakdagi to'rtburchak tugmaniki qotib turgan
+
+
+// owl carausel 
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 
 
 
