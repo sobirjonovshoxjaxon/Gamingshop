@@ -32,15 +32,34 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Bog'lanish</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-button" href="#">A'zolik</a>
-                            </li>
+                            <div id="showModal" class="border border-5 border-warning">
+                                <li class="nav-item">
+                                    <a class="nav-button" href="#">A'zolik</a>
+                                </li>
+                            </div>
                         
                         </ul>
                     </div>
                     </div>
                 </nav>
         </section>
+
+         <!-- modal -->
+         <div id="modal">
+            <div class="modal-content">
+                <h3>A'zolik</h3>
+
+                <form action="">
+                    <input type="text" placeholder="Ismingiz (majburiy)" required>
+                    <input type="text" placeholder="Yoshingiz (majburiy)" required>
+                    <input type="date" required>
+                    <input type="email" placeholder="Email pochtangiz (majburiy)" required>
+                    <input type="number" placeholder="Telefon raqamingiz (majburiy)" required>
+                    <button type="submit">Jo'natish</button>
+                    <button id="close">Orqaga</button>
+                </form>
+            </div>
+        </div>
     </header>
 
     <main>

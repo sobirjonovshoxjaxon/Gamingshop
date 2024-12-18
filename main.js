@@ -36,21 +36,6 @@ document.querySelectorAll('input[type="radio"]').forEach(input => {
 let btn 
 let text 
 
-
-window.onload = function(){
-
-
-    btn = document.querySelectorAll("#tab .btn")
-    text = document.querySelectorAll("#tab .tab-text")
-
-    texthidden()
-
-    text[0].classList.add("show")
-    text[0].classList.remove("hide")
-    btn[0].classList.add("active")
-}
-
-
 function texthidden(){
 
     for(let i=0; i<btn.length; i++){
@@ -60,20 +45,35 @@ function texthidden(){
     }
 }
 
-document.getElementById("tab").onclick=function(e){
 
-    let t = e.target 
+window.onload = function(){
+
+
+    btn = document.querySelectorAll("#tab .btn")
+    text = document.querySelectorAll("#tab .tab-text")
+
+    texthidden()
+    text[0].classList.add("show")
+    text[0].classList.remove("hide")
+    btn[0].classList.add("active")
+}
+
+
+
+document.getElementById("tab").onclick =  function(event){
+
+    let t = event.target 
     console.log(t)
 
     for(let i=0; i<btn.length; i++){
 
        if(btn[i] == t){
 
-        texthidden()
+            texthidden()
 
-        btn[i].classList.add("active")
-        text[i].classList.add("show")
-        text[i].classList.remove("hide")
+            btn[i].classList.add("active")
+            text[i].classList.add("show")
+            text[i].classList.remove("hide")
         
        }else{
 
@@ -89,16 +89,23 @@ document.getElementById("tab").onclick=function(e){
 
 let modal = document.getElementById("modal")
 let showModal = document.getElementById("showModal")
-let closeModal = document.getElementById("close")
+let closeModal = document.querySelector("#close")
 
 showModal.onclick = function(){
 
     modal.style.display = "flex" 
 }
 
-close.onclick = function(){
+closeModal.onclick = function(){
 
     modal.style.display = "none"
+}
+
+
+window.onclick = function(event){
+
+    let ti = event.target 
+    console.log(ti)
 }
 
 
